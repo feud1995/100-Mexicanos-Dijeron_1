@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+	<head>
+		<title>¡100 Terapeutas Dijeron!</title>
+		<link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+		<link rel="stylesheet" href="./css/animate.css">
+		<link rel="stylesheet" href="./css/server.css">
+	</head>
+  	<body>
+		<div id="upper">
+			<p id="globalScore">0</p>
+			<table>
+				<tr>
+					<td>1.</td>
+					<td id="firstAnswer" class="centertd">________________________________________</td>
+					<td id="firstScore">__</td>
+				</tr>
+				<tr>
+					<td>2.</td>
+					<td id="secondAnswer" class="centertd">________________________________________</td>
+					<td id="secondScore">__</td>
+				</tr>
+				<tr>
+					<td>3.</td>
+					<td id="thirdAnswer" class="centertd">________________________________________</td>
+					<td id="thirdScore">__</td>
+				</tr>
+				<tr>
+					<td>4.</td>
+					<td id="fourthAnswer" class="centertd">________________________________________</td>
+					<td id="fourthScore">__</td>
+				</tr>
+				<tr>
+					<td>5.</td>
+					<td id="fifthAnswer" class="centertd">________________________________________</td>
+					<td id="fifthScore">__</td>
+				</tr>
+			</table>
+			<div id="t1" style="left: 0; padding-left: 5%;">
+				<p id="teamOne"></p>
+				<p id="teamOneScore" style="text-align: center; padding-top: 5px;"></p>
+			</div>
+			<div id="t2" style="right: 0; padding-right: 5%;">
+				<p id="teamTwo"></p>
+				<p id="teamTwoScore"style="text-align: center; padding-top: 5px;"></p>
+			</div>
+			<div id="img-wrapper">
+				<div id="firstStrike">
+					<img src="./img/error.png" alt="">
+				</div>
+				<div id="secondStrike">
+					<img src="./img/error.png" alt="">
+				</div>
+				<div id="thirdStrike">
+					<img src="./img/error.png" alt="">
+				</div>
+			</div>
+		</div>
+		<div id="lower">
+			<div id="btn-wrapper">
+				<button onclick="openFullscreen();">Abrir <i>fullscreen</i></button>
+				<button onclick="closeFullscreen();">Cerrar <i>fullscreen</i></button>
+			</div>
+		</div>
+  	</body>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="./js/server.js"></script>
+</html>

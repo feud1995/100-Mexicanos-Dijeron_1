@@ -1,0 +1,193 @@
+<!doctype html>
+<html>
+  <head>
+		<title>Client</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/client2.css">
+	</head>
+	<body>
+		<input type="text" id="personOne" placeholder="Nombre de la Persona 1">
+		<input type="text" id="personTwo" placeholder="Nombre de la Persona 2">
+		<button id="peopleNames" class="btn btn-info">Submit</button>
+		<h2>1ra Pregunta</h2>
+		<select	id="firstQuestion" onchange="switchAnswers()">
+			<option value="p1">Además de la tierra, nombra un planeta.</option>
+			<option value="p2">Menciona un personaje que use capa.</option>
+			<option value="p3">Especifica un lugar donde se encuentre un chicle pegado.</option>
+			<option value="p4">Dinos algo que pueda iluminar el cielo.</option>
+			<option value="p5">Nombra una fruta redonda.</option>
+			<option value="p6">Menciona una bebida que se prepare con tequila.</option>
+			<option value="p7">Menciona un material que se utiliza para hacer esculturas.</option>
+			<option value="p8">Menciona un deporte en que el exceso de peso ayuda.</option>
+			<option value="p9">Menciona una parte de un águila.</option>
+			<option value="p10">Menciona algo que siempre se te olvida cuando sales de viaje.</option>
+			<option value="p11">Menciona un tipo de taco.</option>
+			<option value="p12">¿Qué puedes preparar con agua caliente?</option>
+			<option value="p13">Menciona un género musical latino.</option>
+			<option value="p14">Dinos un apellido común entre los mexicanos.</option>
+			<option value="p15">Sabor de refresco más conocido.</option>
+		</select>
+		<select name="" id="1-answer-1">
+			<option id="1-r1-1" value=""></option>
+			<option id="1-r2-1" value=""></option>
+			<option id="1-r3-1" value=""></option>
+			<option id="1-r4-1" value=""></option>
+			<option id="1-r5-1" value=""></option>
+			<option id="1-r6-1" value="">ERROR</option>
+		</select>
+		<select name="" id="1-answer-2">
+			<option id="1-r1-2" value=""></option>
+			<option id="1-r2-2" value=""></option>
+			<option id="1-r3-2" value=""></option>
+			<option id="1-r4-2" value=""></option>
+			<option id="1-r5-2" value=""></option>
+			<option id="1-r6-2" value="">ERROR</option>
+		</select>
+		<button id="a1">Destapar Respuestas</button>
+		<h2>2da Pregunta</h2>
+		<select	id="secondQuestion" onchange="switchAnswers2()">
+			<option value="p1">Además de la tierra, nombra un planeta.</option>
+			<option value="p2">Menciona un personaje que use capa.</option>
+			<option value="p3">Especifica un lugar donde se encuentre un chicle pegado.</option>
+			<option value="p4">Dinos algo que pueda iluminar el cielo.</option>
+			<option value="p5">Nombra una fruta redonda.</option>
+			<option value="p6">Menciona una bebida que se prepare con tequila.</option>
+			<option value="p7">Menciona un material que se utiliza para hacer esculturas.</option>
+			<option value="p8">Menciona un deporte en que el exceso de peso ayuda.</option>
+			<option value="p9">Menciona una parte de un águila.</option>
+			<option value="p10">Menciona algo que siempre se te olvida cuando sales de viaje.</option>
+			<option value="p11">Menciona un tipo de taco.</option>
+			<option value="p12">¿Qué puedes preparar con agua caliente?</option>
+			<option value="p13">Menciona un género musical latino.</option>
+			<option value="p14">Dinos un apellido común entre los mexicanos.</option>
+			<option value="p15">Sabor de refresco más conocido.</option>
+		</select>
+		<select id="2-answer-1">
+			<option id="2-r1-1" value=""></option>
+			<option id="2-r2-1" value=""></option>
+			<option id="2-r3-1" value=""></option>
+			<option id="2-r4-1" value=""></option>
+			<option id="2-r5-1" value=""></option>
+			<option id="2-r6-1" value="">ERROR</option>
+		</select>
+		<select id="2-answer-2">
+			<option id="2-r1-2" value=""></option>
+			<option id="2-r2-2" value=""></option>
+			<option id="2-r3-2" value=""></option>
+			<option id="2-r4-2" value=""></option>
+			<option id="2-r5-2" value=""></option>
+			<option id="2-r6-2" value="">ERROR</option>
+		</select>
+		<button id="a2">Destapar Respuestas</button>
+		<h2>3ra Pregunta</h2>
+		<select	id="thirdQuestion" onchange="switchAnswers3()">
+			<option value="p1">Además de la tierra, nombra un planeta.</option>
+			<option value="p2">Menciona un personaje que use capa.</option>
+			<option value="p3">Especifica un lugar donde se encuentre un chicle pegado.</option>
+			<option value="p4">Dinos algo que pueda iluminar el cielo.</option>
+			<option value="p5">Nombra una fruta redonda.</option>
+			<option value="p6">Menciona una bebida que se prepare con tequila.</option>
+			<option value="p7">Menciona un material que se utiliza para hacer esculturas.</option>
+			<option value="p8">Menciona un deporte en que el exceso de peso ayuda.</option>
+			<option value="p9">Menciona una parte de un águila.</option>
+			<option value="p10">Menciona algo que siempre se te olvida cuando sales de viaje.</option>
+			<option value="p11">Menciona un tipo de taco.</option>
+			<option value="p12">¿Qué puedes preparar con agua caliente?</option>
+			<option value="p13">Menciona un género musical latino.</option>
+			<option value="p14">Dinos un apellido común entre los mexicanos.</option>
+			<option value="p15">Sabor de refresco más conocido.</option>
+		</select>
+		<select name="" id="3-answer-1">
+			<option id="3-r1-1" value=""></option>
+			<option id="3-r2-1" value=""></option>
+			<option id="3-r3-1" value=""></option>
+			<option id="3-r4-1" value=""></option>
+			<option id="3-r5-1" value=""></option>
+			<option id="3-r6-1" value="">ERROR</option>
+		</select>
+		<select name="" id="3-answer-2">
+			<option id="3-r1-2" value=""></option>
+			<option id="3-r2-2" value=""></option>
+			<option id="3-r3-2" value=""></option>
+			<option id="3-r4-2" value=""></option>
+			<option id="3-r5-2" value=""></option>
+			<option id="3-r6-2" value="">ERROR</option>
+		</select>
+		<button id="a3">Destapar Respuestas</button>
+		<h2>4ta Pregunta</h2>
+		<select	id="fourthQuestion" onchange="switchAnswers4()">
+			<option value="p1">Además de la tierra, nombra un planeta.</option>
+			<option value="p2">Menciona un personaje que use capa.</option>
+			<option value="p3">Especifica un lugar donde se encuentre un chicle pegado.</option>
+			<option value="p4">Dinos algo que pueda iluminar el cielo.</option>
+			<option value="p5">Nombra una fruta redonda.</option>
+			<option value="p6">Menciona una bebida que se prepare con tequila.</option>
+			<option value="p7">Menciona un material que se utiliza para hacer esculturas.</option>
+			<option value="p8">Menciona un deporte en que el exceso de peso ayuda.</option>
+			<option value="p9">Menciona una parte de un águila.</option>
+			<option value="p10">Menciona algo que siempre se te olvida cuando sales de viaje.</option>
+			<option value="p11">Menciona un tipo de taco.</option>
+			<option value="p12">¿Qué puedes preparar con agua caliente?</option>
+			<option value="p13">Menciona un género musical latino.</option>
+			<option value="p14">Dinos un apellido común entre los mexicanos.</option>
+			<option value="p15">Sabor de refresco más conocido.</option>
+		</select>
+		<select name="" id="4-answer-1">
+			<option id="4-r1-1" value=""></option>
+			<option id="4-r2-1" value=""></option>
+			<option id="4-r3-1" value=""></option>
+			<option id="4-r4-1" value=""></option>
+			<option id="4-r5-1" value=""></option>
+			<option id="4-r6-1" value="">ERROR</option>
+		</select>
+		<select name="" id="4-answer-2">
+			<option id="4-r1-2" value=""></option>
+			<option id="4-r2-2" value=""></option>
+			<option id="4-r3-2" value=""></option>
+			<option id="4-r4-2" value=""></option>
+			<option id="4-r5-2" value=""></option>
+			<option id="4-r6-2" value="">ERROR</option>
+		</select>
+		<button id="a4">Destapar Respuestas</button>
+		<h2>5ta Pregunta</h2>
+		<select	id="fifthQuestion" onchange="switchAnswers5()">
+			<option value="p1">Además de la tierra, nombra un planeta.</option>
+			<option value="p2">Menciona un personaje que use capa.</option>
+			<option value="p3">Especifica un lugar donde se encuentre un chicle pegado.</option>
+			<option value="p4">Dinos algo que pueda iluminar el cielo.</option>
+			<option value="p5">Nombra una fruta redonda.</option>
+			<option value="p6">Menciona una bebida que se prepare con tequila.</option>
+			<option value="p7">Menciona un material que se utiliza para hacer esculturas.</option>
+			<option value="p8">Menciona un deporte en que el exceso de peso ayuda.</option>
+			<option value="p9">Menciona una parte de un águila.</option>
+			<option value="p10">Menciona algo que siempre se te olvida cuando sales de viaje.</option>
+			<option value="p11">Menciona un tipo de taco.</option>
+			<option value="p12">¿Qué puedes preparar con agua caliente?</option>
+			<option value="p13">Menciona un género musical latino.</option>
+			<option value="p14">Dinos un apellido común entre los mexicanos.</option>
+			<option value="p15">Sabor de refresco más conocido.</option>
+		</select>
+		<select name="" id="5-answer-1">
+			<option id="5-r1-1" value=""></option>
+			<option id="5-r2-1" value=""></option>
+			<option id="5-r3-1" value=""></option>
+			<option id="5-r4-1" value=""></option>
+			<option id="5-r5-1" value=""></option>
+			<option id="5-r6-1" value="">ERROR</option>
+		</select>
+	<select name="" id="5-answer-2">
+			<option id="5-r1-2" value=""></option>
+			<option id="5-r2-2" value=""></option>
+			<option id="5-r3-2" value=""></option>
+			<option id="5-r4-2" value=""></option>
+			<option id="5-r5-2" value=""></option>
+			<option id="5-r6-2" value="">ERROR</option>
+		</select>
+		<button id="a5">Destapar Respuestas</button>
+		<br>
+		<button id="repetida" style="margin-top: 20px;">Respuesta Repetida</button>
+  	</body>
+  	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="./js/client2.js"></script>
+</html>

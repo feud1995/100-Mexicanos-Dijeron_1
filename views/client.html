@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+		<title>Client</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css">
+		<link rel="stylesheet" href="./css/client.css">
+	</head>
+	<body>
+		<input type="text" id="teamOne" placeholder="Nombre del Equipo 1">
+		<input type="text" id="teamTwo" placeholder="Nombre del Equipo 2">
+		<button id="teamNames" class="btn btn-info btn-lg btn-block" style="font-size: 7rem;">Submit</button>
+    	<select id="questions" onchange="switchAnswers()">
+			<option value="p1">Aparte del fémur, menciona un hueso largo.</option>
+			<option value="p2">Nombra una articulación del cuerpo.</option>
+			<option value="p3">Menciona cual es el agente físico más utilizado.</option>
+			<option value="p4">Menciona un músculo antigravitatorio.</option>
+			<option value="p5">Nombra un nervio craneal.</option>
+			<option value="p6">Nombra una fase del potencial de acción.</option>
+			<option value="p7">Ejemplo de prueba para evaluar manguito rotador.</option>
+			<option value="p8">¿Cuál es el apoyo ortopédico para marcha más empleado?</option>
+			<option value="p9">Di un tipo de fractura.</option>
+			<option value="p10">Menciona una de las fases de la marcha.</option>
+			<option value="p11">Da un ejemplo de una técnica de tratamiento para punto gatillo.</option>
+			<option value="p12">Menciona un tipo de corriente.</option>
+			<option value="p13">Menciona una lesión de rodilla.</option>
+			<option value="p14">Trastorno neurológico más común.</option>
+			<option value="p15">Ejemplo de malformación de tubo neural.</option>
+    	</select>
+		<button id="r1" class="btn btn-info" value="Respuesta 1">Respuesta 1</button>
+		<button id="r2" class="btn btn-info" value="Respuesta 2">Respuesta 2</button>
+		<button id="r3" class="btn btn-info" value="Respuesta 3">Respuesta 3</button>
+		<button id="r4" class="btn btn-info" value="Respuesta 4">Respuesta 4</button>
+		<button id="r5" class="btn btn-info" value="Respuesta 5">Respuesta 5</button>
+		<button id="scoreOne" class="btn btn-primary">Puntos E1</button>
+		<button id="scoreTwo" class="btn btn-danger">Puntos E2</button>
+		<button id="strikes" class="btn btn-danger">Strikes</button>
+  	</body>
+  	<script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+  	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="./js/client.js"></script>
+</html>

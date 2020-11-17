@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>¡100 Terapeutas Dijeron!</title>
+        <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+		<link rel="stylesheet" href="./css/animate.css">
+        <link rel="stylesheet" href="./css/server.css">
+    </head>
+    <body>
+        <div id="upper">
+            <div id="name-wrapper">
+                <p id="nameOne"></p>
+                <p id="nameTwo"></p>
+            </div> 
+            <div id="table-wrapper">
+                <table id="table1" class="server2">
+                    <tr>
+                        <td>1.</td>
+                        <td id="firstAnswer-1" class="midcell">____________________</td>
+                        <td id="firstScore-1">__</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td id="secondAnswer-1" class="midcell">____________________</td>
+                        <td id="secondScore-1">__</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td id="thirdAnswer-1" class="midcell">____________________</td>
+                        <td id="thirdScore-1">__</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td id="fourthAnswer-1" class="midcell">____________________</td>
+                        <td id="fourthScore-1">__</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td id="fifthAnswer-1" class="midcell">____________________</td>
+                        <td id="fifthScore-1">__</td>
+                    </tr>
+                </table>
+                <table id="table2" class="server2">
+                    <tr>
+                        <td>1.</td>
+                        <td id="firstAnswer-2" class="midcell">____________________</td>
+                        <td id="firstScore-2">__</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
+                        <td id="secondAnswer-2" class="midcell">____________________</td>
+                        <td id="secondScore-2">__</td>
+                    </tr>
+                    <tr>
+                        <td>3.</td>
+                        <td id="thirdAnswer-2" class="midcell">____________________</td>
+                        <td id="thirdScore-2">__</td>
+                    </tr>
+                    <tr>
+                        <td>4.</td>
+                        <td id="fourthAnswer-2" class="midcell">____________________</td>
+                        <td id="fourthScore-2">__</td>
+                    </tr>
+                    <tr>
+                        <td>5.</td>
+                        <td id="fifthAnswer-2" class="midcell">____________________</td>
+                        <td id="fifthScore-2">__</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- <div id="score-wrapper"> -->
+            <p id="scoreOne">0</p>
+            <p id="scoreTwo">0</p>
+            <!-- </div> -->
+        </div>
+        <div id="lower">
+            <div id="btn-wrapper">
+                <button onclick="openFullscreen();">Abrir <i>fullscreen</i></button>
+                <button onclick="closeFullscren();">Cerrar <i>fullscreen</i></button>
+            </div>
+        </div>
+    </body>
+    <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
+	<script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+	<script src="./js/server2.js"></script>
+</html>
